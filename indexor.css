@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video { /* Eric Meyer's Method */
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -48,7 +48,7 @@ p{
   color: red;
   font-size: 20px;
 }
-h1 {
+h1 { /*Fun fonts and rules for them*/
 font-family:"Arvo";
 font-weight:normal;
 font-size: 55px;
@@ -76,13 +76,13 @@ padding: 0;
 z-index: 1;
 position: relative;
 }
-div.gallery {
+div.gallery { /*Rules for Gallery */
   margin: 5px;
   float: left;
   width: 180px;
 }
 
-div.gallery:hover {
+div.gallery:hover { /*Puts a border around the gallery when mouse over it for DRAMATIC effect */
   border: 1px solid #777;
 }
 
@@ -90,7 +90,7 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
-.column {
+.column { /*Creates rules for Column with photos */
   float: left;
   width: 33.33%;
   padding: 50px;
@@ -98,7 +98,7 @@ div.gallery img {
 	border: 50px;
 	justify-content: center;
 }
-.column2 {
+.column2 { /*Creates rules for columns with flip cards */
   float: left;
   width: 33.33%;
   padding: 50px;
@@ -107,7 +107,6 @@ div.gallery img {
 	justify-content: center;
 	margin-left: 50px;
 }
-/* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;
@@ -121,7 +120,7 @@ div.desc {
   padding: 1px;
   text-align: center;
 	background-color: white;
-}
+} /*Added some extra styling control to change colors and to just make sure the website doesn't break on a phone */
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
@@ -175,7 +174,7 @@ div.desc {
   background-color: #D6E9FE;
 }
 
-.feature-1 {
+.feature-1 { /*Color control for tablet version */
   background-color: #F5CF8E;
 }
 
@@ -237,7 +236,7 @@ div.desc {
 	justify-content: center
 }
 .parallax{
-		/* The image used */
+		/* The image used, literally just copied and pasted parallax with different photos for each slide */
 		background-image: url("Profile_Photo.PNG");
 		/* Full height */
 		height: 100%;
@@ -321,7 +320,7 @@ div.desc {
 }
 .clear{ clear: both;
 }
-.quotes{
+.quotes{ /*Made fun quotes to put into different styles */
 font-family: 'Goudy Bookletter 1911', serif;
 font-weight: normal;
 font-size: 30px;
@@ -331,7 +330,7 @@ display: flex
 text-align: left;
 }
 .quotes2{
-font-family: 'Bauhaus 93', serif;
+font-family: 'Bauhaus 93', serif; /*This font may not work properly on MAC but its cool on windows */
 font-weight: normal;
 font-size: 20px;
 color: black;
@@ -348,7 +347,7 @@ background-color: white;
 display: flex
 text-align: left;
 }
- .quotes_container{ width: 800px; margin: 0 auto;
+ .quotes_container{ width: 800px; margin: 0 auto; /*Container to center quotes */
  }
 #header{
 width: 100%;

@@ -236,7 +236,7 @@ div.desc {
 }
 .parallax{
 		/* The image used, literally just copied and pasted parallax with different photos for each slide */
-		background-image: url("Profile_Photo.PNG");
+		background-image: url("Assets/Profile_Photo.PNG");
 		/* Full height */
 		height: 100%;
 		width: 100%;

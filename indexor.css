@@ -249,7 +249,7 @@ div.desc {
 }
 .parallax2{
 		/* The image used */
-		background-image: url("Para1.jpg");
+		background-image: url("Assets/Para1.jpg");
 		/* Full height */
 		height: 100%;
 		width: 100%;
@@ -262,7 +262,7 @@ div.desc {
 }
 .parallax3{
 		/* The image used */
-		background-image: url("Para2.jpg");
+		background-image: url("Assets/Para2.jpg");
 		/* Full height */
 		height: 100%;
 		width: 100%;
@@ -275,7 +275,7 @@ div.desc {
 }
 .parallax4{
 		/* The image used */
-		background-image: url("Para3.jpg");
+		background-image: url("Assets/Para3.jpg");
 		/* Full height */
 		height: 100%;
 		width: 100%;
@@ -288,7 +288,7 @@ div.desc {
 }
 .parallax5{
 		/* The image used */
-		background-image: url("Para4.jpg");
+		background-image: url("Assets/Para4.jpg");
 		/* Full height */
 		height: 100%;
 		width: 100%;
@@ -301,7 +301,7 @@ div.desc {
 }
 .parallax6{
 		/* The image used */
-		background-image: url("Para7.jpg");
+		background-image: url("Assets/Para7.jpg");
 		/* Full height */
 		height: 100%;
 		width: 100%;
@@ -377,7 +377,7 @@ padding-left: 21px;
 }
 #nav li a:hover{ color: #fff; opacity:1;
 }
-#divider{ background: url('Photo3.jpg')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto;
+#divider{ background: url('Assets/Photo3.jpg')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto;
 }
-#ribbon{ background: url('Photo5.jpg')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px;
+#ribbon{ background: url('Assets/Photo5.jpg')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px;
 }

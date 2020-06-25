@@ -1,0 +1,383 @@
+body, html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { /* Eric Meyer's Method */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 50;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p{
+  color: red;
+  font-size: 20px;
+}
+h1 { /*Fun fonts and rules for them*/
+font-family:"Arvo";
+font-weight:normal;
+font-size: 55px;
+text-align: center;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+h2 {
+font-family:"Arvo";
+font-weight: normal;
+font-size: 40px;
+text-align: center;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+h3 {
+font-family: "Oswald";
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+}
+div.gallery { /*Rules for Gallery */
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover { /*Puts a border around the gallery when mouse over it for DRAMATIC effect */
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.column { /*Creates rules for Column with photos */
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+	border-collapse: collapse;
+	border: 50px;
+	justify-content: center;
+}
+.column2 { /*Creates rules for columns with flip cards */
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+	border-collapse: collapse;
+	border: 50px;
+	justify-content: center;
+	margin-left: 50px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+	border-collapse: seperate;
+	border: 10px;
+}
+
+div.desc {
+  padding: 1px;
+  text-align: center;
+	background-color: white;
+} /*Added some extra styling control to change colors and to just make sure the website doesn't break on a phone */
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+	.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topmenu{
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: center
+}
+.menu {
+  background-color: #5995DA;
+  height: 80px;
+}
+
+.header {
+  background-color: #B2D6FF;
+}
+
+.content {
+  background-color: #EAEDF0;
+  height: 600px;
+	display: flex;
+}
+
+.sign-up {
+  background-color: #D6E9FE;
+}
+
+.feature-1 { /*Color control for tablet version */
+  background-color: #F5CF8E;
+}
+
+.feature-2 {
+  background-color: #F09A9D;
+}
+
+.feature-3 {
+  background-color: #C8C6FA;
+}
+}
+/* The flip card container */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /*creates 3d effect */
+}
+
+/* Positions the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side*/
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.topmenu{
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: center
+}
+.parallax{
+		/* The image used, literally just copied and pasted parallax with different photos for each slide */
+		background-image: url("Profile_Photo.PNG");
+		/* Full height */
+		height: 100%;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.parallax2{
+		/* The image used */
+		background-image: url("Para1.jpg");
+		/* Full height */
+		height: 100%;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.parallax3{
+		/* The image used */
+		background-image: url("Para2.jpg");
+		/* Full height */
+		height: 100%;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.parallax4{
+		/* The image used */
+		background-image: url("Para3.jpg");
+		/* Full height */
+		height: 100%;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.parallax5{
+		/* The image used */
+		background-image: url("Para4.jpg");
+		/* Full height */
+		height: 100%;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.parallax6{
+		/* The image used */
+		background-image: url("Para7.jpg");
+		/* Full height */
+		height: 100%;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.center{ margin: 0 auto;
+}
+.content{
+	margin: auto;
+}
+.clear{ clear: both;
+}
+.quotes{ /*Made fun quotes to put into different styles */
+font-family: 'Goudy Bookletter 1911', serif;
+font-weight: normal;
+font-size: 30px;
+color: black;
+background-color: white;
+display: flex
+text-align: left;
+}
+.quotes2{
+font-family: 'Bauhaus 93', serif; /*This font may not work properly on MAC but its cool on windows */
+font-weight: normal;
+font-size: 20px;
+color: black;
+background-color: white;
+display: flex
+text-align: left;
+}
+.quotes3{
+font-family: 'Arial', serif;
+font-weight: normal;
+font-size: 20px;
+color: black;
+background-color: white;
+display: flex
+text-align: left;
+}
+ .quotes_container{ width: 800px; margin: 0 auto; /*Container to center quotes */
+ }
+#header{
+width: 100%;
+background: url('Profile_Photo.PNG');
+height: 80px;
+position: fixed;
+margin-top: 30px;
+}
+#nav{ width: 410px; margin-top: 20px;
+}
+#logo a{ color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold;
+}
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+}
+#nav li{
+margin-top: 9px;
+float: left;
+display: flex;
+padding-left: 21px;
+}
+#nav li a{ color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet';
+}
+#nav li a.active{ color: #fff; opacity:1; border-bottom: 2px solid #fff;
+}
+#nav li a:hover{ color: #fff; opacity:1;
+}
+#divider{ background: url('Photo3.jpg')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto;
+}
+#ribbon{ background: url('Photo5.jpg')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px;
+}
